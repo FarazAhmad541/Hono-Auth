@@ -10,12 +10,12 @@ datasource db {
 model User {
   id       String         @id @default(cuid())
   email    String         @unique
-  password String
+  password String 
   sessions UserSessions[]
 }
 
 model UserSessions {
-  id        User   @relation(fields: [userId], references: [id])
-  userId    String @unique
-  sessionId String @unique
+  id           User   @relation(fields: [userId], references: [id])
+  userId       String @unique
+  sessionToken String 
 }

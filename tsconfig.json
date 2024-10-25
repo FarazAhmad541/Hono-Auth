@@ -10,5 +10,7 @@
     ],
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
+    "noEmit": true, // Don't emit JS files
+    "allowImportingTsExtensions": true
   }
 }
